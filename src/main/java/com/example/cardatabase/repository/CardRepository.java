@@ -15,11 +15,11 @@ public interface CardRepository extends CrudRepository<Car,Long> {
     //List Car By Year
     List<Car> findByYear(int year);
     // list Car by Brand and Model
-    List<Car> findByBrandAAndModel(String brand ,String model);
+    List<Car> findByBrandAndModel(String brand ,String model);
     // List car by Brand and Color
     List<Car> findByBrandAndColor(String brand ,String Color);
     //fetch car by Brand and sorted by year
-    List<Car> findByBrandOderByYearAsc(String brand);
+   // List<Car> findByBrandOderByYearAsc(String brand);
     //Fetch by Brand Using Sql
     @Query("SELECT c from Car c where c.brand=?1")
     List<Car> findByBrand(String brand);
