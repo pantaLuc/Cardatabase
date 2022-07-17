@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name="owners")
 public class Owner {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
